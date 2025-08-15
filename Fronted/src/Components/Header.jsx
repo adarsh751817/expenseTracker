@@ -3,7 +3,8 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Home, PlusCircle, BarChart2, LogOut, Sun, Moon } from "lucide-react";
 import { useNavigate } from "react-router-dom";
-import { useTheme } from "../context/ThemeContext"; 
+import { useTheme } from "../context/themeContext";
+
 
 export default function Header() {
   const navigate = useNavigate();
