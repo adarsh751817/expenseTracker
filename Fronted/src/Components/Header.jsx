@@ -1,5 +1,4 @@
 
-
 import React from "react";
 import { motion } from "framer-motion";
 import { Home, PlusCircle, BarChart2, LogOut, Sun, Moon } from "lucide-react";

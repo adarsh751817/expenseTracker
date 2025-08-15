@@ -26,7 +26,7 @@ const AddIncome = () => {
 
   const fetchIncomes = async () => {
     try {
-      const res = await axios.get("http://localhost:3000/api/income/my_income", {
+      const res = await axios.get("https://expensetracker-backend-sofb.onrender.com/api/income/my_income", {
         headers: { Authorization: `Bearer ${localStorage.getItem("token")}` },
       });
       if (Array.isArray(res.data?.income)) {
@@ -48,11 +48,11 @@ const AddIncome = () => {
       if (editingId) {
         const confirm = window.confirm("Are you sure you want to update this income?");
         if (!confirm) return;
-        await axios.put(`http://localhost:3000/api/income/${editingId}`, payload, {
+        await axios.put(`https://expensetracker-backend-sofb.onrender.com/api/income/${editingId}`, payload, {
           headers: { Authorization: `Bearer ${localStorage.getItem("token")}` },
         });
       } else {
-        await axios.post("http://localhost:3000/api/income", payload, {
+        await axios.post("https://expensetracker-backend-sofb.onrender.com/api/income", payload, {
           headers: { Authorization: `Bearer ${localStorage.getItem("token")}` },
         });
       }
@@ -85,7 +85,7 @@ const AddIncome = () => {
     const confirm = window.confirm("Are you sure you want to delete this income?");
     if (!confirm) return;
     try {
-      await axios.delete(`http://localhost:3000/api/income/${id}`, {
+      await axios.delete(`https://expensetracker-backend-sofb.onrender.com/api/income/${id}`, {
         headers: { Authorization: `Bearer ${localStorage.getItem("token")}` },
       });
       fetchIncomes();
