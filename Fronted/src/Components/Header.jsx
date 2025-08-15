@@ -1,106 +1,10 @@
 
-// import React from "react";
-// import { motion } from "framer-motion";
-// import { Home, PlusCircle, BarChart2, LogOut } from "lucide-react";
-// import { useNavigate } from "react-router-dom";
-
-
-// export default function Header() {
-//   const navigate = useNavigate();
-
-//   return (
-//     <motion.nav
-//       initial={{ x: -300, opacity: 0 }}
-//       animate={{ x: 0, opacity: 1 }}
-//       transition={{ duration: 0.8, type: "spring" }}
-//       className="fixed left-0 top-0 h-full w-64 bg-gradient-to-b from-purple-700 to-indigo-900 shadow-2xl flex flex-col justify-between py-8 px-4 rounded-r-2xl"
-//     >
-//       <div className="flex flex-col items-center mb-6">
-//         <img
-//           src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
-//           alt="Expense Tracker Logo"
-//           className="w-16 h-16 mb-2"
-//         />
-//         <span className="text-white text-xl font-bold">Expense Tracker</span>
-//       </div>
-
-//       <div className="space-y-6">
-//         <motion.div
-//           whileHover={{ scale: 1.1 }}
-//           className="flex items-center space-x-3 cursor-pointer text-white"
-//           onClick={() => navigate('/')}
-//         >
-//           <Home />
-//           <span className="text-lg font-semibold">Home</span>
-//         </motion.div>
-
-//         <motion.div
-//           whileHover={{ scale: 1.1 }}
-//           className="flex items-center space-x-3 cursor-pointer text-white"
-//           onClick={() => navigate('/Dashboard')}
-//         >
-//           <Home />
-//           <span className="text-lg font-semibold">Dashboard</span>
-//         </motion.div>
-
-//         <motion.div
-//           whileHover={{ scale: 1.1 }}
-//           className="flex items-center space-x-3 cursor-pointer text-white"
-//           onClick={() => navigate('/AddExpense')}
-//         >
-//           <PlusCircle />
-//           <span className="text-lg font-semibold">Add Expense</span>
-//         </motion.div>
-
-
-//         <motion.div
-//           whileHover={{ scale: 1.1 }}
-//           className="flex items-center space-x-3 cursor-pointer text-white"
-//           onClick={() => navigate('/Reports')}
-//         >
-//           <BarChart2 />
-//           <span className="text-lg font-semibold">Reports</span>
-//         </motion.div>
-
-
-//         <motion.div
-//           whileHover={{ scale: 1.1 }}
-//           className="flex items-center space-x-3 cursor-pointer text-white"
-//           onClick={() => navigate('/Login')}
-//         >
-//           <BarChart2 />
-//           <span className="text-lg font-semibold">Login</span>
-//         </motion.div>
-
-
-
-// <motion.div
-//           whileHover={{ scale: 1.1 }}
-//           className="flex items-center space-x-3 cursor-pointer text-white"
-//           onClick={() => navigate('/Signup')}
-//         >
-//           <BarChart2 />
-//           <span className="text-lg font-semibold">Signup</span>
-//         </motion.div>
-
-
-//       </div>
-
-//       <motion.div whileHover={{ scale: 1.1 }} className="flex items-center space-x-3 cursor-pointer text-white"
-//        onClick={() => navigate('/Logout')}>
-//         <LogOut />
-//         <span className="text-lg font-semibold">Logout</span>
-//       </motion.div>
-//     </motion.nav>
-//   );
-// }
-
 
 import React from "react";
 import { motion } from "framer-motion";
 import { Home, PlusCircle, BarChart2, LogOut, Sun, Moon } from "lucide-react";
 import { useNavigate } from "react-router-dom";
-import { useTheme } from "../context/ThemeContext"; // Import Theme Context
+import { useTheme } from "../context/ThemeContext"; 
 
 export default function Header() {
   const navigate = useNavigate();
